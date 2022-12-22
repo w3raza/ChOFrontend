@@ -1,5 +1,13 @@
 import React, { useCallback, useEffect, useState } from "react";
-import { Box, Button, Flex, Input, List, ListItem } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Flex,
+  Input,
+  List,
+  ListItem,
+  Link,
+} from "@chakra-ui/react";
 import Menu from "../components/Menu";
 import { useNavigate } from "react-router-dom";
 
@@ -20,11 +28,17 @@ const HomePage = () => {
 
   return (
     <Box p={10}>
-      <Text>
-        Link do dokumentacji (zapomniałam dodać do zipa) :
-        https://docs.google.com/document/d/1hnbPQaHGLd7E8qWwuOyIvSX-TZnDaRCS2sQSREHy7Ic/edit?usp=sharing
-      </Text>
       <Menu />
+      <Flex mt={50} justifyContent="center">
+        <Link
+          href="https://docs.google.com/document/d/1hnbPQaHGLd7E8qWwuOyIvSX-TZnDaRCS2sQSREHy7Ic/edit?usp=sharing"
+          color="blue"
+          target="_blank"
+        >
+          Link
+        </Link>
+        : do dokumentacji (zapomniałam dodać do zip-a)
+      </Flex>
       <Flex mt={50} justifyContent="center">
         <Input
           w="50%"
