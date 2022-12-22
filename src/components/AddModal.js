@@ -35,7 +35,7 @@ export function AddModal({ isOpen, onClose, endpoint, title }) {
 
   const submitHandler = async (data) => {
     console.log(data);
-    await fetch(`https://chomoviebackend.azurewebsites.net/cast/${endpoint}`, {
+    await fetch(`https://cho.azurewebsites.net/cast/${endpoint}`, {
       crossDomain: true,
       method: "PUT",
       headers: {

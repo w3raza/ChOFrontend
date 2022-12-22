@@ -31,12 +31,9 @@ const MoviePage = () => {
   const showToast = useToast();
 
   const deleteFilm = async () => {
-    await fetch(
-      `https://chomoviebackend.azurewebsites.net/movies/delete/${film.title}`,
-      {
-        method: "DELETE",
-      }
-    );
+    await fetch(`https://cho.azurewebsites.net/movies/delete/${film.title}`, {
+      method: "DELETE",
+    });
 
     showToast({
       title: "Film",
