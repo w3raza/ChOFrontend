@@ -35,6 +35,7 @@ const MoviePage = () => {
       `https://movieappwz.azurewebsites.net/movies/delete/${film.title}`,
       {
         method: "DELETE",
+        headers: { "Content-Type": "application/json" },
       }
     );
 
