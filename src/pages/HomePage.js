@@ -20,6 +20,10 @@ const HomePage = () => {
 
   return (
     <Box p={10}>
+      <Text>
+        Link do dokumentacji (zapomniałam dodać do zipa) :
+        https://docs.google.com/document/d/1hnbPQaHGLd7E8qWwuOyIvSX-TZnDaRCS2sQSREHy7Ic/edit?usp=sharing
+      </Text>
       <Menu />
       <Flex mt={50} justifyContent="center">
         <Input
