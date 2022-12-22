@@ -33,7 +33,7 @@ const AddMovieForm = () => {
   });
 
   const onSubmit = async (data) => {
-    await fetch("https://cho.azurewebsites.net/movies/create", {
+    await fetch("https://movieappwz.azurewebsites.net/movies/create", {
       crossDomain: true,
       method: "PUT",
       headers: {

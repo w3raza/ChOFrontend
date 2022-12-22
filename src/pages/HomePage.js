@@ -9,7 +9,7 @@ const HomePage = () => {
   const navigate = useNavigate();
 
   const fetchFilms = useCallback(async () => {
-    await fetch(`https://cho.azurewebsites.net/movies/${value}`)
+    await fetch(`https://movieappwz.azurewebsites.net/movies/${value}`)
       .then((response) => response.json())
       .then((data) => setFilms(data));
   }, [value]);

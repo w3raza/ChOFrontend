@@ -15,7 +15,7 @@ const Director = ({ name, born, description }) => {
   const showToast = useToast();
 
   const deleteItem = async () => {
-    await fetch(`https://cho.azurewebsites.net/cast/delete/${name}`, {
+    await fetch(`https://movieappwz.azurewebsites.net/cast/delete/${name}`, {
       method: "DELETE",
     });
 
