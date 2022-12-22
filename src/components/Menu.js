@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Flex, Link } from "@chakra-ui/react";
+import { Button, Flex } from "@chakra-ui/react";
 import { useNavigate } from "react-router-dom";
 
 const Menu = () => {
